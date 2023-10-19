@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A34C2935-6CE8-4E35-898A-734EB32A81ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Soytur1</RootNamespace>
+    <AssemblyName>Soytur1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>WhatsApp-Image-2022-12-28-at-19.04.39.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form Ekranları\GirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ekranları\GirisForm.Designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Ekranları\IslemlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ekranları\IslemlerForm.Designer.cs">
+      <DependentUpon>IslemlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Ekranları\KartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ekranları\KartForm.Designer.cs">
+      <DependentUpon>KartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Ekranları\GirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ekranları\GirisPaneli.Designer.cs">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Ekranları\RaporlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ekranları\RaporlarForm.Designer.cs">
+      <DependentUpon>RaporlarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Ekranları\TanimlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ekranları\TanimlarForm.Designer.cs">
+      <DependentUpon>TanimlarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\AracIslemleriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\AracIslemleriForm.Designer.cs">
+      <DependentUpon>AracIslemleriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\EksrtaIs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\EksrtaIs.Designer.cs">
+      <DependentUpon>EksrtaIs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\AraçİşlemleriKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\AraçİşlemleriKayıt.Designer.cs">
+      <DependentUpon>AraçİşlemleriKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\EkstraİşKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\EkstraİşKayıt.Designer.cs">
+      <DependentUpon>EkstraİşKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\MuhKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\MuhKayıt.Designer.cs">
+      <DependentUpon>MuhKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\MuhasebeIslemleriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\MuhasebeIslemleriForm.Designer.cs">
+      <DependentUpon>MuhasebeIslemleriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\ServisIslemleriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\ServisIslemleriForm.Designer.cs">
+      <DependentUpon>ServisIslemleriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\ServisİşlemleriKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemlerDetayForm\KayıtForm\ServisİşlemleriKayıt.Designer.cs">
+      <DependentUpon>ServisİşlemleriKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\Akaryakıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\Akaryakıt.Designer.cs">
+      <DependentUpon>Akaryakıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\AracKartlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\AracKartlariForm.Designer.cs">
+      <DependentUpon>AracKartlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\AracSahipleriKartlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\AracSahipleriKartlariForm.Designer.cs">
+      <DependentUpon>AracSahipleriKartlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\EkstraİşMüş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\EkstraİşMüş.Designer.cs">
+      <DependentUpon>EkstraİşMüş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\AkaryakıtİstasyonKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\AkaryakıtİstasyonKayıt.Designer.cs">
+      <DependentUpon>AkaryakıtİstasyonKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\AraçKartlarıKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\AraçKartlarıKayıt.Designer.cs">
+      <DependentUpon>AraçKartlarıKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\AraçSahipleriKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\AraçSahipleriKayıt.Designer.cs">
+      <DependentUpon>AraçSahipleriKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\EkstraIsMusterileriYeniKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\EkstraIsMusterileriYeniKayıt.Designer.cs">
+      <DependentUpon>EkstraIsMusterileriYeniKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\MüşteriKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\MüşteriKayıt.Designer.cs">
+      <DependentUpon>MüşteriKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\PersonelKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\PersonelKayıt.Designer.cs">
+      <DependentUpon>PersonelKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\TedarikçiKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\TedarikçiKayıt.Designer.cs">
+      <DependentUpon>TedarikçiKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\MuhasebeKartlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\MuhasebeKartlariForm.Designer.cs">
+      <DependentUpon>MuhasebeKartlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\MuhasebeYeniKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\MuhasebeYeniKayıt.Designer.cs">
+      <DependentUpon>MuhasebeYeniKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\MuhasebeYeniKayıt2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\MuhasebeYeniKayıt2.Designer.cs">
+      <DependentUpon>MuhasebeYeniKayıt2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\MusteriKartiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\MusteriKartiForm.Designer.cs">
+      <DependentUpon>MusteriKartiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\PazarlamaKartlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\PazarlamaKartlariForm.Designer.cs">
+      <DependentUpon>PazarlamaKartlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\PazarlamaKartıYeniKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\KayıtDetay\PazarlamaKartıYeniKayıt.Designer.cs">
+      <DependentUpon>PazarlamaKartıYeniKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\PersonelKartlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\PersonelKartlariForm.Designer.cs">
+      <DependentUpon>PersonelKartlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartlarDetayForm\TedarikciKartlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartlarDetayForm\TedarikciKartlariForm.Designer.cs">
+      <DependentUpon>TedarikciKartlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailGonderici.cs" />
+    <Compile Include="Models\ConnectionDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectionDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConnectionDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectionDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConnectionDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectionDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GirisTablosu.cs">
+      <DependentUpon>ConnectionDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form Ekranları\Şifre Sıfırlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ekranları\Şifre Sıfırlama.Designer.cs">
+      <DependentUpon>Şifre Sıfırlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarDetayForm\AracRaporlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarDetayForm\AracRaporlariForm.Designer.cs">
+      <DependentUpon>AracRaporlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarDetayForm\KartRaporlarıForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarDetayForm\KartRaporlarıForm.Designer.cs">
+      <DependentUpon>KartRaporlarıForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarDetayForm\MuhasebeRaporlarıForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarDetayForm\MuhasebeRaporlarıForm.Designer.cs">
+      <DependentUpon>MuhasebeRaporlarıForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet110.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet110.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet12TableAdapters.cs" />
+    <Compile Include="SoyturDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoyturDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoyturDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglantisi.cs" />
+    <Compile Include="TanimlarDetayForm\BölgeselTanimlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\BölgeselTanimlarForm.Designer.cs">
+      <DependentUpon>BölgeselTanimlarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\EkstraIsFiyatProfiliForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\EkstraIsFiyatProfiliForm.Designer.cs">
+      <DependentUpon>EkstraIsFiyatProfiliForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\FinansalTanimlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\FinansalTanimlarForm.Designer.cs">
+      <DependentUpon>FinansalTanimlarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\GüzergahTanimlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\GüzergahTanimlariForm.Designer.cs">
+      <DependentUpon>GüzergahTanimlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\KartTanimlariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarDetayForm\KartTanimlariForm.Designer.cs">
+      <DependentUpon>KartTanimlariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet.Designer.cs">
+      <DependentUpon>İnternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet2.Designer.cs">
+      <DependentUpon>İnternet2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet3.Designer.cs">
+      <DependentUpon>İnternet3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İnternetForm\İnternet4.Designer.cs">
+      <DependentUpon>İnternet4.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form Ekranları\GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Ekranları\IslemlerForm.resx">
+      <DependentUpon>IslemlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Ekranları\KartForm.resx">
+      <DependentUpon>KartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Ekranları\GirisPaneli.resx">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Ekranları\RaporlarForm.resx">
+      <DependentUpon>RaporlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Ekranları\TanimlarForm.resx">
+      <DependentUpon>TanimlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\AracIslemleriForm.resx">
+      <DependentUpon>AracIslemleriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\EksrtaIs.resx">
+      <DependentUpon>EksrtaIs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\KayıtForm\AraçİşlemleriKayıt.resx">
+      <DependentUpon>AraçİşlemleriKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\KayıtForm\EkstraİşKayıt.resx">
+      <DependentUpon>EkstraİşKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\KayıtForm\MuhKayıt.resx">
+      <DependentUpon>MuhKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\MuhasebeIslemleriForm.resx">
+      <DependentUpon>MuhasebeIslemleriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\ServisIslemleriForm.resx">
+      <DependentUpon>ServisIslemleriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemlerDetayForm\KayıtForm\ServisİşlemleriKayıt.resx">
+      <DependentUpon>ServisİşlemleriKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\Akaryakıt.resx">
+      <DependentUpon>Akaryakıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\AracKartlariForm.resx">
+      <DependentUpon>AracKartlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\AracSahipleriKartlariForm.resx">
+      <DependentUpon>AracSahipleriKartlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\EkstraİşMüş.resx">
+      <DependentUpon>EkstraİşMüş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\AkaryakıtİstasyonKayıt.resx">
+      <DependentUpon>AkaryakıtİstasyonKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\AraçKartlarıKayıt.resx">
+      <DependentUpon>AraçKartlarıKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\AraçSahipleriKayıt.resx">
+      <DependentUpon>AraçSahipleriKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\EkstraIsMusterileriYeniKayıt.resx">
+      <DependentUpon>EkstraIsMusterileriYeniKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\MüşteriKayıt.resx">
+      <DependentUpon>MüşteriKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\PersonelKayıt.resx">
+      <DependentUpon>PersonelKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\TedarikçiKayıt.resx">
+      <DependentUpon>TedarikçiKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\MuhasebeKartlariForm.resx">
+      <DependentUpon>MuhasebeKartlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\MuhasebeYeniKayıt.resx">
+      <DependentUpon>MuhasebeYeniKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\MuhasebeYeniKayıt2.resx">
+      <DependentUpon>MuhasebeYeniKayıt2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\MusteriKartiForm.resx">
+      <DependentUpon>MusteriKartiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\PazarlamaKartlariForm.resx">
+      <DependentUpon>PazarlamaKartlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\KayıtDetay\PazarlamaKartıYeniKayıt.resx">
+      <DependentUpon>PazarlamaKartıYeniKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\PersonelKartlariForm.resx">
+      <DependentUpon>PersonelKartlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartlarDetayForm\TedarikciKartlariForm.resx">
+      <DependentUpon>TedarikciKartlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form Ekranları\Şifre Sıfırlama.resx">
+      <DependentUpon>Şifre Sıfırlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarDetayForm\AracRaporlariForm.resx">
+      <DependentUpon>AracRaporlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarDetayForm\KartRaporlarıForm.resx">
+      <DependentUpon>KartRaporlarıForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarDetayForm\MuhasebeRaporlarıForm.resx">
+      <DependentUpon>MuhasebeRaporlarıForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarDetayForm\BölgeselTanimlarForm.resx">
+      <DependentUpon>BölgeselTanimlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarDetayForm\EkstraIsFiyatProfiliForm.resx">
+      <DependentUpon>EkstraIsFiyatProfiliForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarDetayForm\FinansalTanimlarForm.resx">
+      <DependentUpon>FinansalTanimlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarDetayForm\GüzergahTanimlariForm.resx">
+      <DependentUpon>GüzergahTanimlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarDetayForm\KartTanimlariForm.resx">
+      <DependentUpon>KartTanimlariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İnternetForm\İnternet.resx">
+      <DependentUpon>İnternet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İnternetForm\İnternet2.resx">
+      <DependentUpon>İnternet2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İnternetForm\İnternet3.resx">
+      <DependentUpon>İnternet3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İnternetForm\İnternet4.resx">
+      <DependentUpon>İnternet4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Models\ConnectionDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ConnectionDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\ConnectionDB.edmx.diagram">
+      <DependentUpon>ConnectionDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SoyturDataSet.xsc">
+      <DependentUpon>SoyturDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet.xss">
+      <DependentUpon>SoyturDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet1.xsc">
+      <DependentUpon>SoyturDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet1.xss">
+      <DependentUpon>SoyturDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet10.xsc">
+      <DependentUpon>SoyturDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet10.xss">
+      <DependentUpon>SoyturDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet11.xsc">
+      <DependentUpon>SoyturDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet11.xss">
+      <DependentUpon>SoyturDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet110.xsc">
+      <DependentUpon>SoyturDataSet110.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet110.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet110.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet110.xss">
+      <DependentUpon>SoyturDataSet110.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet12.xsc">
+      <DependentUpon>SoyturDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet12.xss">
+      <DependentUpon>SoyturDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet13.xsc">
+      <DependentUpon>SoyturDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet13.xss">
+      <DependentUpon>SoyturDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet14.xsc">
+      <DependentUpon>SoyturDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet14.xss">
+      <DependentUpon>SoyturDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet15.xsc">
+      <DependentUpon>SoyturDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet15.xss">
+      <DependentUpon>SoyturDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet16.xsc">
+      <DependentUpon>SoyturDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet16.xss">
+      <DependentUpon>SoyturDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet17.xsc">
+      <DependentUpon>SoyturDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet17.xss">
+      <DependentUpon>SoyturDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet18.xsc">
+      <DependentUpon>SoyturDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet18.xss">
+      <DependentUpon>SoyturDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet19.xsc">
+      <DependentUpon>SoyturDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet19.xss">
+      <DependentUpon>SoyturDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet2.xsc">
+      <DependentUpon>SoyturDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet2.xss">
+      <DependentUpon>SoyturDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet20.xsc">
+      <DependentUpon>SoyturDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet20.xss">
+      <DependentUpon>SoyturDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet21.xsc">
+      <DependentUpon>SoyturDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet21.xss">
+      <DependentUpon>SoyturDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet22.xsc">
+      <DependentUpon>SoyturDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet22.xss">
+      <DependentUpon>SoyturDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet23.xsc">
+      <DependentUpon>SoyturDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet23.xss">
+      <DependentUpon>SoyturDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet3.xsc">
+      <DependentUpon>SoyturDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet3.xss">
+      <DependentUpon>SoyturDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet31.xsc">
+      <DependentUpon>SoyturDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet31.xss">
+      <DependentUpon>SoyturDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet4.xsc">
+      <DependentUpon>SoyturDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet4.xss">
+      <DependentUpon>SoyturDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet42.xsc">
+      <DependentUpon>SoyturDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet42.xss">
+      <DependentUpon>SoyturDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet5.xsc">
+      <DependentUpon>SoyturDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet5.xss">
+      <DependentUpon>SoyturDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet51.xsc">
+      <DependentUpon>SoyturDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet51.xss">
+      <DependentUpon>SoyturDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet6.xsc">
+      <DependentUpon>SoyturDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet6.xss">
+      <DependentUpon>SoyturDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet61.xsc">
+      <DependentUpon>SoyturDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet61.xss">
+      <DependentUpon>SoyturDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet7.xsc">
+      <DependentUpon>SoyturDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet7.xss">
+      <DependentUpon>SoyturDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet8.xsc">
+      <DependentUpon>SoyturDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet8.xss">
+      <DependentUpon>SoyturDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet9.xsc">
+      <DependentUpon>SoyturDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="SoyturDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoyturDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoyturDataSet9.xss">
+      <DependentUpon>SoyturDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-10-17 at 12.46.41.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-10-17 at 12.46.411.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\ConnectionDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ConnectionDB.Context.cs</LastGenOutput>
+      <DependentUpon>ConnectionDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ConnectionDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ConnectionDB.edmx</DependentUpon>
+      <LastGenOutput>ConnectionDB.cs</LastGenOutput>
+    </Content>
+    <Content Include="WhatsApp-Image-2022-12-28-at-19.04.39.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
